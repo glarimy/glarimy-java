@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<servlet>
+		<servlet-name>add</servlet-name>
+		<servlet-class>com.glarimy.java.servlets.directory.ui.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>add</servlet-name>
+		<url-pattern>/directory/employees/addEmployee</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>find</servlet-name>
+		<servlet-class>com.glarimy.java.servlets.directory.ui.FindServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>find</servlet-name>
+		<url-pattern>/directory/employees/findEmployee</url-pattern>
+	</servlet-mapping>
+</web-app>
